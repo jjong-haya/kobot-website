@@ -1,0 +1,148 @@
+# ==========================================
+# 🔒 SECURITY CRITICAL FILES
+# ==========================================
+# NEVER commit these files!
+
+# Environment variables (contains API keys)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# Backup files that might contain secrets
+*.env.backup
+*.env.bak
+.env.*
+!.env.example
+
+# ==========================================
+# Dependencies
+# ==========================================
+node_modules/
+.pnp
+.pnp.js
+/.yarn
+
+# ==========================================
+# Testing
+# ==========================================
+coverage/
+*.lcov
+.nyc_output
+*.test.local
+
+# ==========================================
+# Build Output
+# ==========================================
+dist/
+dist-ssr/
+build/
+.cache/
+out/
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# Editor & IDE
+# ==========================================
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Other editors
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# ==========================================
+# OS Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ==========================================
+# Build Tools
+# ==========================================
+# Vite
+.vite/
+.vite-inspect/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# ==========================================
+# Package Managers
+# ==========================================
+.npm
+.pnpm-store
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ==========================================
+# Misc
+# ==========================================
+*.pem
+*.key
+*.cert
+
+# Vercel
+.vercel
+
+# Sentry
+.sentryclirc
+
+# Local development
+.eslintcache
+.stylelintcache
+*.local
+
+# ==========================================
+# 🔒 SUPABASE SPECIFIC
+# ==========================================
+# Never commit these!
+supabase/.temp/
+.supabase/
+
+# ==========================================
+# 🚨 SECURITY PATTERNS
+# ==========================================
+# Any file with these patterns should be reviewed
+*secret*
+*credential*
+*private-key*
+*serviceAccount*
