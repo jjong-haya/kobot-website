@@ -3,6 +3,10 @@
 # ==========================================
 # NEVER commit these files!
 
+# Documentation files (개발 가이드는 로컬에만 보관)
+*.md
+!README.md
+
 # Environment variables (contains API keys)
 .env
 .env.local
